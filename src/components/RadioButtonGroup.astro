@@ -17,57 +17,67 @@
     const {etiqueta} = Astro.props ; 
 ---
 <label >{etiqueta}</label>
-<div>
-    <div id="cedula">
-        <input 
+<div class="rgb">
+    <div  id="cedula">
+        <input class="btn"
         type="radio"
         name="rbg"
         id="radio1" 
     /> 
-    <strong>CC</strong>
+   C.C
 </div>
     <div  id="tarjeta">
-        <input 
+        <input class="btn"
        type="radio"
        name="rbg"
         id="radio2" 
     /> 
-    <strong>TI</strong>
+    T.I
 </div>
     <div id="cedulaextranjeria">
-            <input 
+            <input class="btn"
              type="radio"
               name="rbg"
               id="radio3" 
         />
-     <strong>CE</strong>
+     C.E
     </div>
     
 </div>
 <style> 
-#cedula{
-    background-color: rgb(213, 165, 252);
-    /*display:
-    determina como una etiqueta
-    se comporta en cuanto a: display:display: 
-    largo, ancho, ubicaciòn;*/
-    display:inline;
+.rgb{
+    background-color: rgb(255, 255, 255);
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    margin-left: 20px;
+    width: 90%;
+    margin: 11px 0 6px 5px ;
+}
+
+
+
+
+
+#cedula .radio-btn{
+    display: block;
+    width: 10px;
+    height: 10px;
+}
     
+
+
+  #tarjeta .radio-btn{
+    display: block;
+    width: 10px;
+    height: 10px;;   
 }
-#tarjeta{
-    background-color: rgb(140, 0, 255);
-    /*display:
-    determina como una etiqueta
-    se comporta en cuanto a: display:display: 
-    largo, ancho, ubicaciòn;*/
-    display:inline;   
-}
-#cedulaextranjeria{
-    background-color: rgb(94, 0, 170);
-    /*display:
-    determina como una etiqueta
-    se comporta en cuanto a: display:display: 
-    largo, ancho, ubicaciòn;*/
-    display:inline;   
-}
+   #cedulaextranjeria .radio-btn{
+    display: block;
+    width: 10px;
+    height: 10px;
+   }
+
+
 </style>
