@@ -3,32 +3,16 @@
         etiqueta: string;
     }
     const etiqueta =Astro.props.etiqueta;
+
+
 ---
-<button>
+<button class="boton-enviar">
     {etiqueta}
 </button>
+
 <style>
-    /*estlos de clase*/
-    /*se aplican a los elementos*/
-    /*e tengan el atributo class*/
-    /*con el mismo nombre de clase*/
-.boton-enviar {
+  .boton-enviar {
     display: block;
-    margin-left: auto;   /* Lo empuja completamente a la derecha */
-    margin-right: 44px;
-    width: 120px;
-    height: 40px;
-    background-color: hwb(0 0% 100%);
-    color: rgb(230, 0, 0);
-    border-radius: 10px;
-}
-
-
-
-
-
-     
-
-        
-    
+    margin: 20px 650px 0;
+  }
 </style>

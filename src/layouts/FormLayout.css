@@ -14,11 +14,7 @@
     font-weight: 600;
     margin-bottom: 50px;
 }
-.titulo{
-
-    text-align: center;
-    color: rgb(210, 255, 240);
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-weight: 600;
-    margin-bottom: 50px;
+.formulario  {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-weight: 600;
 }
